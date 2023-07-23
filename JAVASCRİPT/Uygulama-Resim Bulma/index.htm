@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Arama</title>
+    <style>
+        .form-wrapper{
+            display: flex;
+            justify-content: center;
+            
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 15px;
+        }
+        #inputSearch{
+            width: 75%;
+            text-align: center;
+            height:20px;
+        }
+        #button-wrapper{
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+        #searchButton{
+            margin-right: 10px;
+            width: 120px;
+            background-color: green;
+            border-radius: 5px;
+            color: #fff;
+            border-color: #fff;
+            box-shadow: 1px 1px 1px 1px grey;
+        }
+        #searchButton:hover{
+            color: black;
+        }
+        #clearButton:hover{
+            color: black;
+        }
+        #clearButton{
+            margin-right: 10px;
+            width: 120px;
+            background-color: darkorange;
+            border-radius: 5px;
+            color: #fff;
+            border-color: #fff;
+            box-shadow: 1px 1px 1px 1px grey;
+        }
+        #imageList{
+            display: flex;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+        }
+        .card{
+            margin: 20px 20px 10px 0px;
+            width: 30%;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            padding: 10px;
+            box-shadow: 2px 2px 2px 2px grey;
+        }
+        .img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="form-wrapper">
+            <form id="form">
+                <input id="inputSearch" type="text" placeholder="İstediğiniz ismi yazın">
+                <div id="button-wrapper">
+                    <button id="searchButton">Arayınız</button>
+                    <button id="clearButton">Temizle</button>
+                </div>
+            </form>
+        </div>
+        <div id="imageList">
+            <!-- resimler için -->
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
